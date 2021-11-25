@@ -4,7 +4,7 @@ const axios = require("axios").default;
 export const Autocomplete = async (inputValue) => {
   try {
     const response = await axios.get(
-      `https://cors-anywhere.herokuapp.com/http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${apikey}&q=${inputValue}`
+      `https://peaceful-taiga-64214.herokuapp.com/http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=${apikey}&q=${inputValue}`
     );
     return response.data;
   } catch (error) {
@@ -17,7 +17,7 @@ export const getForecastsData = async (key) => {
 
   try {
     const response = await axios.get(
-      `https://cors-anywhere.herokuapp.com/http://dataservice.accuweather.com/forecasts/v1/daily/5day/${key}?apikey=${apikey}&metric=true`
+      `https://peaceful-taiga-64214.herokuapp.com/http://dataservice.accuweather.com/forecasts/v1/daily/5day/${key}?apikey=${apikey}&metric=true`
     );
     forecastData = response.data;
     return forecastData;
@@ -31,7 +31,7 @@ export const getWeatherDataByKey = async (key) => {
 
   try {
     const response = await axios.get(
-      `https://cors-anywhere.herokuapp.com/http://dataservice.accuweather.com/currentconditions/v1/${key}?apikey=${apikey}`
+      `https://peaceful-taiga-64214.herokuapp.com/http://dataservice.accuweather.com/currentconditions/v1/${key}?apikey=${apikey}`
     );
     let forecastData = await getForecastsData(key);
     results = {
@@ -50,7 +50,7 @@ export const getKeyByCoords = async (latitude, longitude) => {
 
   try {
     const response = await axios.get(
-      `https://cors-anywhere.herokuapp.com/http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${apikey}&q=${latitude}%2C${longitude}&details=true`
+      `https://peaceful-taiga-64214.herokuapp.com/http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=${apikey}&q=${latitude}%2C${longitude}&details=true`
     );
     cityKey = response.data;
     results = await getWeatherDataByKey(cityKey.Key);
