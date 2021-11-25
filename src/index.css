@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Times New Roman", Times, serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.sun {
+  position: absolute;
+  top: -16px;
+}
+.moon {
+  position: absolute;
+  top: 3px;
+  left: 19px;
+}
+.cBtn {
+  font-size: 22px;
+  position: absolute;
+  top: -2px;
+  color: #fff;
+}
+.Btn {
+  font-size: 22px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+.logo {
+  position: relative;
+  top: 2px;
+  left: 8px;
+}
+.navBth {
+  height: ;
+}
+.light {
+  color: black;
+}

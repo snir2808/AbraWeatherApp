@@ -1,0 +1,109 @@
+.searchList {
+  position: absolute;
+  margin: 0;
+  margin-left: 6px;
+  width: 210px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  -webkit-box-shadow: 1px 10px 15px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 10px 15px 2px rgba(0, 0, 0, 0.5);
+  background-color: rgba(123, 131, 139, 0.9);
+  z-index: 1;
+}
+li {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: -40px;
+  padding-left: 15px;
+}
+ul li:last-child:hover {
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+
+  transition: all 0.1s;
+}
+li:hover {
+  transition: all 0.3s;
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  cursor: pointer;
+}
+.mainIconWeather {
+  width: 220px;
+  position: relative;
+  top: -80px;
+}
+
+.typographyMainTemp {
+  color: #fff;
+  font-size: 50px;
+  position: relative;
+  top: -35px;
+}
+.typographyCityName {
+  color: #fff;
+  position: relative;
+  top: -35px;
+}
+.typographyWeatherText {
+  color: #fff;
+  position: relative;
+  top: -131px;
+}
+.favBtn {
+  position: relative;
+  top: -145px;
+}
+.mainDataDiv {
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 550px;
+  margin-bottom: 130px;
+  border-radius: 5%;
+  margin-top: 40px;
+}
+.icon-heart {
+  color: #fff;
+}
+.textField {
+  text-align: center;
+  margin: 0 auto;
+  width: 223px;
+  height: 56px;
+  border: 1px solid white;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.4);
+}
+::-webkit-input-placeholder {
+  font-size: 25px;
+  color: black;
+}
+.lightInput {
+  border: 1px solid black;
+}
+.lightCityName {
+  color: black;
+}
+.lightMainTemp {
+  color: #000;
+}
+.lightWeatherText {
+  color: black;
+}
+
+.lightDiv {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+@media only screen and (max-width: 600px) {
+  .textFieldDiv {
+    padding-top: 80px;
+  }
+  .mainDataDiv {
+    height: 630px;
+  }
+}

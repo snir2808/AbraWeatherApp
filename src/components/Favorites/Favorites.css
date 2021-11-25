@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.9);
+  transition: 0.3s all;
+}
+
+.fav {
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  transition: all 2s;
+  margin: 1px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.container .fav {
+  font-size: 30px;
+  flex-basis: 10%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+  transition: 0.3s all;
+}
+.h1Fav {
+  text-align: center;
+  margin: 15px;
+  font-size: 65px;
+  color: #fff;
+}
+.h2Fav {
+  text-align: center;
+  margin: 15px;
+  color: #fff;
+}
+.icon {
+  width: 120px;
+}
+.light {
+  color: #000;
+}
+.lightCon {
+  background: rgba(255, 255, 255, 0.4);
+}

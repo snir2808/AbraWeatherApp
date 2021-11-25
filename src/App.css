@@ -1,0 +1,9 @@
+.root {
+  background-image: url("./components/NavBar/assets/jonathan-bowers-BqKdvJ8a5TI-unsplash.jpg");
+  background-color: #cccccc;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
