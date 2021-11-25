@@ -1,4 +1,4 @@
-const apikey = "CpROQn95qa8fXR9iHO0wTy6NUWEkOQfX";
+const apikey = "S7IF8eiS5wXcPgreNQETxB1HOWSGoplW";
 const axios = require("axios").default;
 
 export const Autocomplete = async (inputValue) => {
