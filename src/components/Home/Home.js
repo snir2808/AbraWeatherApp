@@ -100,7 +100,6 @@ const Home = () => {
       setResult(response);
     }
   };
-  console.log(state);
   return (
     <div onClick={() => setResult()}>
       <ToastContainer

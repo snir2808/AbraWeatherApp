@@ -34,6 +34,7 @@ function App() {
   const error = () => {
     toast.warn("Location not found! 😞", {});
   };
+  console.log("snir app for abra");
 
   return (
     <div className="root">
